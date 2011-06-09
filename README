@@ -1,0 +1,19 @@
+MOODLE COURSE BENCHMARKING BLOCK
+================================
+James Simpson
+
+
+Extract the contents into <moodleroot>/blocks/benchmarking/*
+
+Carefully read the instructions in the config.php file located
+in the benchmarking folder. You can use the default configuration
+or you may wish to implement your own.
+
+Navigate to your site's admin index.
+
+You may wish to install the Benchmarking block as a 'sticky'
+block (which will cause it to appear on every course page).
+This can be done via the admin menu.
+
+This block is for Moodle 1.9.x but may work on earlier
+versions.
