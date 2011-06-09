@@ -28,5 +28,10 @@ $levels = array(
 );
 
 
+// STUDENT POINTS ASSIGNMENT
+// Define the number of points added per enrolled student
+
+$stupoints = 1;
+
 
 ?>

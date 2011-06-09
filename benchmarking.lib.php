@@ -1,4 +1,4 @@
-i<?php
+<?php
 
 //Moodle Course benchmarking function library.
 
@@ -32,5 +32,10 @@ function get_benchmark_level($score) {
     return $benchmark;
 }
 
+function get_num_student($course){
+//    $result = count_records('role_assignments','contextid',$course,'roleid',5);
+    $result = count_records('role_assignments','roleid',5);
+    return $result;
+}
 
 ?>
