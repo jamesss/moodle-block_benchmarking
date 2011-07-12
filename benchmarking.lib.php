@@ -38,4 +38,14 @@ function get_num_student($course){
     return $result;
 }
 
+function get_colourcode($course) {
+    include 'config.php';
+    foreach ($colours as $level => $colour) {
+        if (get_benchmark_level(calc_score($course)) == $level) {
+            return $colour;
+        }
+    }
+    return null;
+}
+
 ?>

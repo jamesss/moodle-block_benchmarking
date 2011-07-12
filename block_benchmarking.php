@@ -24,9 +24,10 @@ class block_benchmarking extends block_base {
     
 
     function make_content() {
-        $score = calc_score(2);
+        global $COURSE;
+        $score = calc_score($COURSE->id);
         $c  = "<div id=\"pre\">" . get_string('bmlevel','block_benchmarking') . "</div>";
-        $c .= "<div id=\"level\">" . get_benchmark_level($score) . "</div>";
+        $c .= "<div id=\"level\" style=\"background-color:" . get_colourcode($COURSE->id) . "\">"  . get_benchmark_level($score) . "</div>";
         $c .= "<div id=\"score\">" . get_string('wtotalsc','block_benchmarking')  . $score . "</div>";
        // $c .= "<div>Num Students: " . get_num_student($course->id) . "</div>";
         return $c;

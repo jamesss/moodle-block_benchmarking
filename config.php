@@ -34,4 +34,10 @@ $levels = array(
 $stupoints = 1;
 
 
+//COLOUR ASSIGNMENTS FOR LEVELS
+$colours = array(
+    'Not Applicable' => '#ffffff',
+    'Bronze' => '#B45F04'
+);
+
 ?>
